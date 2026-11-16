@@ -1,6 +1,6 @@
 # Korg nanoKONTROL (Mk1) script for Akai Force / MPC 3
 
-A device script that maps a Korg nanoKONTROL Mk1 to track mixing, mute, cue, transport and view switching on an Akai Force running the MPC 3 software.
+A device script that maps a Korg nanoKONTROL Mk1 to track mixing, mute, cue, transport and view switching on an Akai Force running the MPC 3.10.x software.
 
 ## Files
 
@@ -9,7 +9,8 @@ A device script that maps a Korg nanoKONTROL Mk1 to track mixing, mute, cue, tra
 | `nanoKontrol.ini` | Tells MPC which MIDI port belongs to the device and which script to load. Checksum generated with 'sign_script.py' against the MPC bin file of 3.10.0.49. Tested on Akai Force 3.10.1.12 |
 | `nanoKontrol.lua` | The script: registers the CCs on load and handles them |
 
-Install both files where MPC loads its device scripts (next to the other `.ini` / `.lua` pairs).
+1. Install both files under: .../<MPC|Force> Documents/Devices/Korg/
+2. Reboot
 
 ## How it works
 
